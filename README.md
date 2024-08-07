@@ -2,18 +2,18 @@
 
 A carousel slider widget.
 
-## Features 
+## Features
 
-* Infinite scroll 
-* Custom child widgets
-* Auto play
+- Infinite scroll
+- Custom child widgets
+- Auto play
 
 ## Supported platforms
 
-* Flutter Android
-* Flutter iOS
-* Flutter web
-* Flutter desktop
+- Flutter Android
+- Flutter iOS
+- Flutter web
+- Flutter desktop
 
 ## Live preview
 
@@ -100,11 +100,11 @@ CarouselSlider.builder(
 
 ## Carousel controller
 
-In order to manually control the pageview's position, you can create your own `CarouselController`, and pass it to `CarouselSlider`. Then you can use the `CarouselController` instance to manipulate the position.
+In order to manually control the pageview's position, you can create your own `CarouselControllerPlus`, and pass it to `CarouselSlider`. Then you can use the `CarouselControllerPlus` instance to manipulate the position.
 
-```dart 
+```dart
 class CarouselDemo extends StatelessWidget {
-  CarouselController buttonCarouselController = CarouselController();
+  CarouselControllerPlus buttonCarouselController = CarouselControllerPlus();
 
  @override
   Widget build(BuildContext context) => Column(
@@ -130,7 +130,7 @@ class CarouselDemo extends StatelessWidget {
 }
 ```
 
-### `CarouselController` methods
+### `CarouselControllerPlus` methods
 
 #### `.nextPage({Duration duration, Curve curve})`
 
@@ -170,7 +170,7 @@ Image carousel slider with custom indicator demo:
 
 ![indicator](screenshot/indicator.gif)
 
-Custom `CarouselController` and manually control the pageview position demo:
+Custom `CarouselControllerPlus` and manually control the pageview position demo:
 
 ![manual](screenshot/manually.gif)
 
